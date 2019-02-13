@@ -4,6 +4,17 @@ For points in the "what" section, you should know their definition, motivation a
 What
 
 1. Frequent itemset mining: frequent/closed/max/sequential pattern, association rule.
+    frequent pattern: An itemset X is frequent if the support of X is no less than a minsup threshpld(delta)
+    closed patterns: A pattern(itemset) X is closed if X is frequent, and there exists no super-pattern Y>X, with the sma support as X.
+                 直接超集都不等于它本身的支持度。
+    max patterns: A pattern X is a max-pattern if X is frequent and there exists no frequent super-pattern Y>X 元素最多的频繁项集合
+    sequential pattern
+    association rule: if people are buying X, what is the suppot and confidence people will buy the itemset Y.
+    association rule mining: Find all the rules, x->y, with minimum support and confidence.
+
+    support X U Y :X,Y共同出现的次数
+    confidence sup(X U Y) /Sup(X): X,Y 共同出现的次数/X单独出现的次数
+
 
 2. Why do we need null invariant measures? Name some null-variant and null-invariant methods.
 
