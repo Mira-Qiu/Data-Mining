@@ -1,0 +1,34 @@
+
+For points in the "what" section, you should know their definition, motivation and basic idea. For points in the "how" section, you should try to find a real example and solve it by hand (or with the help of a physical calculator).
+
+What
+
+1. Frequent itemset mining: frequent/closed/max/sequential pattern, association rule.
+
+2. Why do we need null invariant measures? Name some null-variant and null-invariant methods.
+
+3. given a transaction database, what's the relationship between the number of closed-patterns and that of max-patterns? (hint: think about their definitions)
+
+4. Downward Closure Property; Apriori, FP-growth algorithm;
+
+5. various constraints: (anti-)monotonic, succinct, convertible, ... Think about their definition and examples.
+
+6. multi-level/negative/quantitative/compressed Patterns. Think about the relationship of supports of multi-level patterns.
+
+7. sequential pattern mining algorithms (basic idea): GSP, SPADE, PrefixSpan, CloSpan. What is the Pseudo-projection trick in PrefixSpan?
+
+8. graph pattern mining algorithms (basic idea): Apriori, gSpan, CloseGraph
+
+9. phrase mining, software bug mining.
+
+How
+
+1. Given a transaction database, find out all frequent/closed/max patterns or association rules.
+
+2. Given a transaction database, find out all sequential patterns.
+
+3. Given a transaction database, try to do Apriori algorithm by hand (refer to the example in lecture slides). Think about: how many times do we need to scan the whole database for pattern support? (hint: For example, after the first union step we have all the candidate 2-itemsets, we scan the db once to get all their supports to decide which ones we prune).
+
+4. Calculate lift and χ2
+
+5. Given a graph database and several subgraphs, calculate the support of each subgraph (only consider topological structure).
